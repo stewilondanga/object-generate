@@ -38,13 +38,14 @@ $(document).ready(function() {
     else $('#delete').prop('disabled', true)
   });
 });
-/*      function updateObj(obj) {
-        $('#obj').empty();
-        let lastKey = '';
-        for (let y in obj) {
-          lastKey = y;
-        }
-        $('select').empty();
+
+function updateObj(obj) {
+  $('#obj').empty();
+  let lastKey = '';
+  for (let y in obj) {
+    lastKey = y;
+  }
+  /*      $('select').empty();
         $.each(obj, (key, val) => {
           $('<option>')
             .attr('value', key)
