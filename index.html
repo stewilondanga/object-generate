@@ -21,6 +21,54 @@
         </a>
     </div>
 
+    <div class="container">
+      <div class="jumbotron">
+        <h1>What is an object?</h1>
+        <p>An object is like an array, but you set the keys too, instead of 0, 1, 2, 3, etc.</p>
+        <p>For example, say you had an array of ages: [24, 57, 25, 12]. You clearly can't see what the person is, so we can turn this into an object:<br>
+          {<br>
+           &nbsp; 'Bob': 24,<br>
+           &nbsp; 'Earl': 57,<br>
+           &nbsp; 'Maria': 25,<br>
+           &nbsp; 'Adam': 12<br>
+          }<br>(Note: these are just random names and ages)</p>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="jumbotron">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="key">Key:</label>
+                  <input type="text" class="form-control" id="key">
+                </div>
+
+                <div class="form-group">
+                  <label for="value">Value:</label>
+                  <input type="text" class="form-control" id="value">
+                </div>
+
+                <button class="btn btn-primary" disabled id="add">Add Property</button>
+              </div>
+              <div class="col-md-6">
+                <br />
+                <div class="form-group">
+                  <select class="custom-select"></select>
+                </div>
+                <button class="btn btn-danger" disabled id="delete">Delete Property</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="jumbotron">
+            Your Object:<br><br>
+            {<div id="obj"></div>}
+          </div>
+        </div>
+      </div>
+    </div>
+
   <section id="contact">
     <div class="overlay">
       <div class="containers">
