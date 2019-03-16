@@ -26,10 +26,10 @@ $(document).ready(function() {
       };
       $('#add').click(addProp);
       $('#delete').click(deleteProp);
-      /*        $('input').keydown(event => {
-                if(event.keyCode == 13) addProp();
-              });
-              $('input').on('input', () => {
+      $('input').keydown(event => {
+        if (event.keyCode == 13) addProp();
+      });
+      /*        $('input').on('input', () => {
                 if($('input').eq(0).val() != '' && $('input').eq(1).val() != '') $('#add').prop('disabled', false);
                 else $('#add').prop('disabled', true);
               });
