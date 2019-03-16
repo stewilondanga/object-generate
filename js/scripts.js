@@ -46,14 +46,14 @@ function updateObj(obj) {
     lastKey = y;
   }
   $('select').empty();
-  /*        $.each(obj, (key, val) => {
-            $('<option>')
-              .attr('value', key)
-              .text(key)
-              .appendTo('select');
-            $('#obj').append('&nbsp; ' + key + ': \'' + val + '\'');
-            if(key != lastKey) $('#obj').append(',');
-            $('#obj').append('<br>');
-          });
-          $('select').val('');
-        }
+  $.each(obj, (key, val) => {
+    $('<option>')
+      .attr('value', key)
+      .text(key)
+      .appendTo('select');
+    $('#obj').append('&nbsp; ' + key + ': \'' + val + '\'');
+    if (key != lastKey) $('#obj').append(',');
+    $('#obj').append('<br>');
+  });
+  $('select').val('');
+}
