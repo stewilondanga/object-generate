@@ -29,11 +29,11 @@ $(document).ready(function() {
       $('input').keydown(event => {
         if (event.keyCode == 13) addProp();
       });
-      /*        $('input').on('input', () => {
-                if($('input').eq(0).val() != '' && $('input').eq(1).val() != '') $('#add').prop('disabled', false);
-                else $('#add').prop('disabled', true);
-              });
-              $('select').change(event => {
+      $('input').on('input', () => {
+        if ($('input').eq(0).val() != '' && $('input').eq(1).val() != '') $('#add').prop('disabled', false);
+        else $('#add').prop('disabled', true);
+      });
+      /*        $('select').change(event => {
                 if(event.target.value != '') $('#delete').prop('disabled', false);
                 else $('#delete').prop('disabled', true)
               });
