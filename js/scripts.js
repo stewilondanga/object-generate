@@ -25,8 +25,8 @@ $(document).ready(function() {
         $('#delete').prop('disabled', true);
       };
       $('#add').click(addProp);
-      /*        $('#delete').click(deleteProp);
-              $('input').keydown(event => {
+      $('#delete').click(deleteProp);
+      /*        $('input').keydown(event => {
                 if(event.keyCode == 13) addProp();
               });
               $('input').on('input', () => {
